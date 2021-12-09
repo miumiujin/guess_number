@@ -1,6 +1,10 @@
 import random #輸入模組
-
-r = random.randint(1,100)
+start = input("請輸入數字範圍的開始值 : ")
+end = input("請輸入數字範圍的結束值 : ")
+start = int(start)
+end = int(end)
+#讓變數的範圍也交給使用者決定
+r = random.randint(start,end)
 count = 0 #這時候我們希望可以一邊猜一邊顯示猜幾次，不能放在while迴圈裡面，不然會一直被歸零
 while True : #這時候不知道要設什麼，先設一個無限回圈
 	count +=1 #等價於count = count + 1
